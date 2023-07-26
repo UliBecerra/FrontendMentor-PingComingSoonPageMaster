@@ -1,0 +1,135 @@
+:root{
+  /* * Primary */
+  --Blue: hsl(223, 87%, 63%);
+  --BlueHover: hsl(223, 87%, 63%, 80%);
+
+/* * Secondary */
+
+--PaleBlue: hsl(223, 100%, 88%);
+--LightRed: hsl(354, 100%, 66%);
+
+/* * Neutral */
+
+--Gray: hsl(0, 0%, 59%);
+--VeryDarkBlue: hsl(209, 33%, 12%);
+}
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+h1{
+  font-weight: 300;
+  color: var(--Gray);
+  padding: 0;
+  margin-bottom: 0;
+}
+h1 strong{
+  color: black;
+}
+h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+main{
+  text-align: center;
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+}
+
+header{
+  text-align: center;
+  margin: 1rem;
+}
+form{
+  margin-top: 15px
+}
+h4{
+  font-size: 20px;
+  color: var(--Gray);
+  font-weight: 300;
+}
+.input-text{
+  outline: none;
+  height: 2rem;
+  padding: 5px;
+  padding-inline: 20px;
+  width: 300px;
+  border-radius: 30px;
+  margin-right: 5px;
+  border: 1px solid var(--PaleBlue);
+  
+}
+.input-text:focus{
+  border:1px solid var(--VeryDarkBlue);
+  color: var(--VeryDarkBlue);
+}
+.input-text::placeholder{
+  color: var(--PaleBlue);
+}
+.btn-sub{
+  cursor: pointer;
+  background-color: var(--Blue);
+  padding: 15px;
+  outline: none;
+  border: none;
+  padding-inline: 3rem;
+  color: white;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+.btn-sub:hover{
+  background-color: var(--BlueHover);
+}
+.image{
+  background-image: url(/images/illustration-dashboard.png);
+  width: 500px;
+  height: 400px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  overflow: hidden;
+  background-size: contain;
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.fa-brands{
+  color: var(--Blue);
+  padding: 10px;
+  height: 20px;
+
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 1px solid var(--PaleBlue); 
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.fa-brands:hover{
+  color: white;
+  background-color: var(--Blue);
+}
+.error-email{
+  border: 1px solid var(--LightRed);
+}
+.email-box{
+  position: relative;
+}
+
+.msg-error-email {
+  display: block;
+  position: absolute;
+  padding-left: 1rem;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--LightRed);
+}
+.msg-hidden{
+  display: none;
+}

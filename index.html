@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: white;
+    }
+   
+  </style>
+
+  <link rel="stylesheet" href="/src/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/96417c3006.css" crossorigin="anonymous">
+</head>
+<body>
+<header class="logo">
+  <img src="/images/logo.svg" alt="">
+</header>
+ <main>
+  <h1>We are launching <strong>soon!</strong></h1>
+  <h2>Subscribe and get notified</h2>
+
+  <form onsubmit="return setAction(this)">
+    <label class="email-box">
+    <input  type="text" name="email" id="email-form" placeholder="Your email adress" class="input-text "  >
+    <p class=" msg-error-email msg-hidden">Please provide a valid email adress </p></label>
+
+  <input  type="submit" value="Notify Me" class="btn-sub">
+  </form >
+<!-- ! Image -->
+  <div class="image">
+
+  </div>
+  <div class="social-icon">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <h4>&copy; Copyright Ping. All rights reserved.</h4>
+ </main>
+
+ <footer  class="attribution">
+  Challenge by
+<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+  >Frontend Mentor</a
+>. Coded by <a href="https://www.linkedin.com/in/aldo-ulises-becerra-casanova/" target="_blank">Uli Becerra</a>.
+</footer>
+
+</body>
+<script 
+    src="https://kit.fontawesome.com/96417c3006.js" 
+    crossorigin="anonymous"></script>
+    <script src="/src/js/script.js"></script>
+    
+</html>
