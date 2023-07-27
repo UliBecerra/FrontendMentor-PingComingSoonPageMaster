@@ -46,7 +46,10 @@ header{
   margin: 1rem;
 }
 form{
-  margin-top: 15px
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 50px;
 }
 h4{
   font-size: 20px;
@@ -58,7 +61,7 @@ h4{
   height: 2rem;
   padding: 5px;
   padding-inline: 20px;
-  width: 300px;
+  width: 100%;
   border-radius: 30px;
   margin-right: 5px;
   border: 1px solid var(--PaleBlue);
@@ -84,6 +87,8 @@ h4{
 }
 .btn-sub:hover{
   background-color: var(--BlueHover);
+  box-shadow: 0px 0px 10px rgb(167, 167, 167);
+  scale: 110%;
 }
 .image{
   background-image: url(/images/illustration-dashboard.png);
@@ -132,4 +137,17 @@ h4{
 }
 .msg-hidden{
   display: none;
+}
+
+@media (max-width: 375px) {
+    .image{
+      width: 100%;
+      object-fit: cover;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    
 }
